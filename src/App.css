@@ -1,38 +1,327 @@
-.App {
+body {
+  background-color: #3F3C3B;
+}
+.box {
+  display: flex;
+  justify-content: space-between;
+  background-color: #403C3B;
+}
+.linkTitle {
+  font-size: 35px;
+  line-height: 40px;
+  letter-spacing: 2px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-left: 50px;
+}
+.linkBox {
+  display: flex;
+  padding: 3%;
+  background-color: #403C3B;
+}
+.link {
+  padding: 0px 50px 0px ;
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+}
+.chickenBoxOne {
+  position: relative;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: 100%;
+  box-shadow: 0 0 7px 7px rgb(0 0 0 / 55%);
+  height: 610px;
+  z-index: 5;
+}
+.chickenBoxTwo {
   text-align: center;
+  position: absolute;
+  width: 610px;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(90deg,#211f20 45%,rgba(33,31,32,.9) 65%,rgba(234, 228, 231, 0));
+  width: 70%;
+  font-family: Montserrat,sans-serif;
+  height: 610px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.chicken {
+  width: 100%;
+  height: 610px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.delivery {
+  color: #fff;
+  font-family: Oswald,sans-serif;
+  font-size: 57px;
+  font-style: italic;
+  padding: 100px 0px 20px 60px;
+  text-align: center;
+  -webkit-transform: rotate(-8.37deg);
+  transform: rotate(-8.37deg);
+  width: 600px;
+  margin-left: 30px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.buttonsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #3F3C3B;
+  height: 5vh;
+  padding: 20px;
+}
+.btn {
+  color: #FFFFFF;
+  background-color: #3F3C3B;
+  border: none;
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.btn:hover, .btn:focus {
+  content: "";
+  display: block;
+  width: auto;
+  padding-top: 3px;
+  border-bottom: 3px solid #618967;
+  font-weight: 700;
+  display: inline-block;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  background-color: #3F3C3B;
+}
+.foodContainer {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background: linear-gradient(90deg,#494544,#504b4a);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 10px rgb(0 0 0 / 30%);
+  color: #fff;
+  flex-grow: 3;
+  flex-basis: 16%;
+  margin: 20px;
+}
+.card_image {
+  width: 100%;
+  height: 60%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 10px rgb(0 0 0 / 30%);
+  object-fit: cover;
+}
+.foodBox {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+.class_description {
+  font-size: 17px;
+  text-align: center;
+}
+.footer_container {
+  display: flex;
+  background: #211f20;
+  height: 100%;
+}
+.btn_box {
+  display: flex;
+}
+.btn_footer {
+  margin: 20px;
+  padding: 5px;
+  font-weight: bold;
+  height: fit-content;
+}
+.footer_title {
+  font-size: 18px;
+  letter-spacing: 0.3em;
+  font-family: 'Inter', sans-serif;
+}
+.footer_container {
+  height: fit-content;
+}
+.footer_par {
+  font-size: 10px;
+  font-family: 'Inter', sans-serif;
+}
+.footer_link {
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+.footer_one {
+  color: #FFFFFF;
+  margin: 10px;
+}
+.footer_two {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+}
+.about_container {
+  margin: 0 auto;
+  background-position: 100%;
+  height: 610px;
+}
+.about_img {
+  width: 100%;
+  height: 610px;
+  position: absolute;
+}
+.about_box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 505px;
+  position: absolute;
+  width: 570px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #3F3C3B;
+  opacity: 0.8;
+  border-radius: 20px;
+}
+.about_par {
+  font-family: Oswald,sans-serif;
+  font-size: 24px;
+  text-align: center;
+  width: 600px;
+  color: #FFFFFF;
+}
+.btn_about {
+  border: 0;
+  padding: 0;
+  background: #3E3C3B;
+  color: #FFFFFF;
+  font-size: 15px;
+}
+.btn_about:hover {
+  background: hsla(0,0%,100%,.1);
+  color: #79b282;
+  transition: all .3s ease-in-out;
+}
+.about_title {
+  font-family: Oswald,sans-serif;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 35px;
+}
+hr {
+  border: solid rgba(255, 255, 255, 0.1);
+}
+.map {
+  width: 100%;
+  height: 610px;
+}
+.contact-container {
+  position: relative;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-position: 100%;
+  box-shadow: 0 0 7px 7px rgb(0 0 0 / 55%);
+  height: 610px;
+  z-index: 5;
+}
+
+.contact_img {
+  width: 100%;
+  height: 610px;
+
+}
+
+.contact_box {
+  display: flex;
+ flex-direction: column;
+position: absolute;
+color: #FFFFFF;
+background-color: #3F3C3B;
+width: 390px;
+margin-left: 50px;
+margin-top: 100px;
+border-radius: 10px;
+
+
+}
+.contact_box h1 {
+text-align: center;
+font-family: Oswald,sans-serif;
+font-size: 35px;
+letter-spacing: 0.1em;
+font-size: 30px;
+margin-bottom: 20px;
+text-transform: uppercase;
+}
+
+.contact_address {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact_address p {
+  font-family: Oswald,sans-serif;
+margin-left: 25px;
+
+}
+.contact_box hr {
+  width: 80%;
+  border: 1px solid #79b282;
+}
+
+
+.btnSlides {
+display: flex;
+justify-content: center;
+position: absolute;
+right: 10%;
+top: 20%;
+
+
+}
+
+.btnSlides button {
+  position: absolute;
+ 
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
   color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  opacity: 0.7;
+
+}
+.btnSlidesNext {
+
+  top: 50%;
+  left: 90%;
+}
+.btnSlidesBack {
+  top: 50%;
+  left: 12%;
+
 }
 
-.App-link {
-  color: #61dafb;
+.btnSlides img {
+width: 400px;
+min-height: 350px;
+border-radius: 15px;
+margin-top: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
